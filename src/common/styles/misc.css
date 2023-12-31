@@ -1,0 +1,3 @@
+.interactive {
+	@apply hover:backdrop-brightness-95;
+}

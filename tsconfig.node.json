@@ -1,0 +1,12 @@
+// See https://github.com/vitejs/vite/issues/11396 for related discussion
+{
+	"include": ["vite.config.ts"],
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"composite": true,
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"skipLibCheck": true,
+		"strictNullChecks": true
+	}
+}

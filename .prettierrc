@@ -1,0 +1,8 @@
+{
+	"plugins": ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
+	"pluginSearchDirs": ["."],
+	"printWidth": 100,
+	"singleQuote": true,
+	"trailingComma": "none",
+	"useTabs": true
+}

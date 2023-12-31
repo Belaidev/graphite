@@ -1,0 +1,25 @@
+/* || Imports */
+
+@import '../common/styles/fonts.css';
+@import '../common/styles/misc.css';
+
+/* || Tailwind imports */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* || Base layer */
+
+@layer base {
+	* {
+		@apply scroll-smooth border-outline shadow-shadow;
+	}
+
+	html {
+		@apply whitespace-nowrap;
+		font-family: 'Noto Sans Display', 'Noto Color Emoji', sans-serif;
+		tab-size: 2;
+	}
+}
