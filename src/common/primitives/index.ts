@@ -3,3 +3,4 @@
  */
 
 export * from './createEffectOn';
+export * from './useContextNonNullable';
