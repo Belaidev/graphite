@@ -21,7 +21,7 @@ export type CreateEffectOnOpts = {
 export function createEffectOn<T, U>(
 	deps: Accessor<T> | AccessorArray<T>,
 	cb: CreateEffectOnCb<T, U>,
-	defVal: undefined,
+	defVal?: undefined,
 	opts?: CreateEffectOnOpts
 ): void;
 export function createEffectOn<T, U>(
