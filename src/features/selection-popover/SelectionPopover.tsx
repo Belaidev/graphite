@@ -29,17 +29,17 @@ export function SelectionPopover(props: SelectionPopoverProps): JSXElement {
 		return false;
 	};
 
-	const setPos = (selectionRect: DOMRect | null, size: [number, number]) => {
+	const setPos = (
+		containerRect: DOMRect,
+		selectionRect: DOMRect | null,
+		size: [number, number]
+	) => {
 		if (!selectionRect || !size[0] || !size[1]) return;
-		const x = clamp(
-			selectionRect.x - props.containerRect.x,
-			0,
-			props.containerRect.width - size[0]
-		);
+		const x = clamp(selectionRect.x - containerRect.x, 0, containerRect.width - size[0]);
 		const y =
-			selectionRect.y - props.containerRect.y - size[1] >= 0
-				? selectionRect.y - props.containerRect.y - size[1]
-				: selectionRect.y - props.containerRect.y + selectionRect.height;
+			selectionRect.y - containerRect.y - size[1] >= 0
+				? selectionRect.y - containerRect.y - size[1]
+				: selectionRect.y - containerRect.y + selectionRect.height;
 		_setPos([x, y]);
 	};
 
@@ -62,7 +62,7 @@ export function SelectionPopover(props: SelectionPopoverProps): JSXElement {
 		}
 	);
 
-	createEffectOn([selectionRect, size], ([selectionRect, size]) => setPos(selectionRect, size));
+	createEffectOn([() => props.containerRect, selectionRect, size], (inputs) => setPos(...inputs));
 
 	onCleanup(cleanupCmd);
 
