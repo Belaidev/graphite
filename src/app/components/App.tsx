@@ -1,16 +1,16 @@
 import { EditorProvider } from 'features/editor';
 import { JSXElement } from 'solid-js';
-import { PlaceholderMenuBar, PlaceholderTabs, _Editor } from '.';
+import { _Editor, _PlaceholderMenuBar, _PlaceholderTabs } from '.';
 
-export function App(): JSXElement {
+export function _App(): JSXElement {
 	return (
 		<>
-			<PlaceholderMenuBar />
-			<PlaceholderTabs>
+			<_PlaceholderMenuBar />
+			<_PlaceholderTabs>
 				<EditorProvider autosaveDelay={100} historyDelay={1000}>
 					<_Editor />
 				</EditorProvider>
-			</PlaceholderTabs>
+			</_PlaceholderTabs>
 		</>
 	);
 }

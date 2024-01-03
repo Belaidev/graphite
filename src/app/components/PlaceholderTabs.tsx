@@ -1,11 +1,11 @@
 import { IconClose, IconPlus } from 'lib/unplugin-icons';
 import { For, JSXElement } from 'solid-js';
 
-export type PlaceholderTabsProps = {
+export type _PlaceholderTabsProps = {
 	children?: JSXElement;
 };
 
-export function PlaceholderTabs(props: PlaceholderTabsProps): JSXElement {
+export function _PlaceholderTabs(props: _PlaceholderTabsProps): JSXElement {
 	const tabNames = ['Untitled 1', 'Untitled 2'];
 
 	return (

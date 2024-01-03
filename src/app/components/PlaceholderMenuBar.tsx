@@ -7,7 +7,7 @@ import {
 } from 'lib/unplugin-icons';
 import { JSXElement } from 'solid-js';
 
-export function PlaceholderMenuBar(): JSXElement {
+export function _PlaceholderMenuBar(): JSXElement {
 	return (
 		<div class="flex justify-between bg-surface-1">
 			{/* Common commands */}
