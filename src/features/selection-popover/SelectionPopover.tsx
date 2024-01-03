@@ -78,7 +78,7 @@ export function SelectionPopover(props: SelectionPopoverProps): JSXElement {
 				}}
 				ref={(el) => (rootEl = el)}
 			>
-				<div class="flex border bg-surface-1 drop-shadow">
+				<div class="flex border bg-surface-1 shadow">
 					{props.children}
 					<Lifecycle onMount={onChildrenMount} />
 				</div>
