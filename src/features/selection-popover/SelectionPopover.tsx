@@ -31,7 +31,6 @@ export function SelectionPopover(props: SelectionPopoverProps): JSXElement {
 
 	const setPos = (selectionRect: DOMRect | null, size: [number, number]) => {
 		if (!selectionRect || !size[0] || !size[1]) return;
-		console.log(selectionRect.height);
 		const x = clamp(
 			selectionRect.x - props.containerRect.x,
 			0,
