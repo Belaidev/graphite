@@ -3,5 +3,6 @@
  */
 
 export * from './App';
+export * from './Editor';
 export * from './PlaceholderMenuBar';
 export * from './PlaceholderTabs';
