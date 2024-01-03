@@ -14,6 +14,7 @@
 	"dependencies": {
 		"@lexical/history": "^0.12.5",
 		"@lexical/rich-text": "^0.12.5",
+		"@lexical/utils": "^0.12.5",
 		"@solid-primitives/scheduled": "^1.4.1",
 		"lexical": "^0.12.5",
 		"lodash": "^4.17.21",
