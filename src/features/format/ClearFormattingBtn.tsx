@@ -7,7 +7,7 @@ export function ClearFormattingBtn(): JSXElement {
 	const onBtnClick = () => _clearFormatting(editor());
 
 	return (
-		<button class="p-2" onClick={onBtnClick}>
+		<button class="interactive p-2" onClick={onBtnClick}>
 			<IconFormatClear />
 		</button>
 	);
