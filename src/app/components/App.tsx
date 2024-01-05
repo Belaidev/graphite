@@ -2,7 +2,7 @@ import { EditorProvider } from 'features/editor';
 import { JSXElement } from 'solid-js';
 import { _Editor, _PlaceholderMenuBar, _PlaceholderTabs } from '.';
 
-export function _App(): JSXElement {
+export function App(): JSXElement {
 	return (
 		<>
 			<_PlaceholderMenuBar />
