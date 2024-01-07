@@ -3,3 +3,4 @@
  */
 
 export * from './Lifecycle';
+export * from './Polymorph';
